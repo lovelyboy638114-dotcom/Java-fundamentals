@@ -1,0 +1,25 @@
+package Java;
+
+import java.util.Vector;
+
+public class Task5 {
+    public static void main(String[] args) {
+
+        Vector<Integer> transactions = new Vector<>();
+
+        transactions.add(1001);
+        transactions.add(1002);
+        transactions.add(1003);
+        transactions.add(1004);
+        transactions.add(1005);
+
+        transactions.add(1001);
+
+        System.out.println("Transaction IDs:");
+        System.out.println(transactions);
+
+        System.out.println("Size: " + transactions.size());
+
+        System.out.println("Contains 1003: " + transactions.contains(1003));
+    }
+}
